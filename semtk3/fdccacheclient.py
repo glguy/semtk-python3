@@ -24,7 +24,7 @@ class FdcCacheClient(semtkasyncclient.SemTkAsyncClient):
         ''' servierURL string - e.g. http://machine:8099
             status_client & results_client - usually None. set only if different from the nodeGroupExecutionService
         '''
-        super(FdcCacheClient, self).__init__(serverURL, "fdcCache", status_client, results_client)
+        super(FdcCacheClient, self).__init__(serverURL, None, status_client, results_client)
     #
     # Upload owl.
     # Default to model[0] graph in the connection
